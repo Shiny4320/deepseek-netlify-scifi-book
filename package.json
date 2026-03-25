@@ -1,0 +1,9 @@
+{
+  "name": "deepseek-netlify-scifi-book",
+  "version": "1.0.0",
+  "private": true,
+  "description": "科幻答案之书：DeepSeek API + Netlify Functions",
+  "scripts": {
+    "dev": "netlify dev"
+  }
+}

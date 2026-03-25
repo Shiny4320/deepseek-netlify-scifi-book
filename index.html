@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>科幻答案之书</title>
+  <meta name="description" content="输入任意问题，只得到一句科幻名言与出处。" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="stars"></div>
+  <main class="app-shell">
+    <section class="hero-card">
+      <div class="badge">SCI-FI BOOK</div>
+      <h1>科幻答案之书</h1>
+      <p class="subtitle">无论你问什么，它都只会回赠你一句来自科幻世界的答案。</p>
+
+      <form id="ask-form" class="ask-form">
+        <label class="sr-only" for="question">输入你的问题</label>
+        <textarea
+          id="question"
+          name="question"
+          rows="5"
+          maxlength="500"
+          placeholder="例如：我该如何面对未知？"
+          required
+        ></textarea>
+
+        <div class="actions">
+          <button id="submit-btn" type="submit">向宇宙发问</button>
+          <button id="random-btn" type="button" class="ghost">随机示例</button>
+        </div>
+      </form>
+
+      <section class="answer-panel" aria-live="polite">
+        <div class="panel-title">宇宙回声</div>
+        <div id="status" class="status">准备就绪</div>
+        <blockquote id="answer" class="answer empty">你的答案会出现在这里</blockquote>
+      </section>
+
+      <details class="tips">
+        <summary>可直接试试这些问题</summary>
+        <div class="tips-list">
+          <button type="button" class="tip-item">我应该继续坚持吗？</button>
+          <button type="button" class="tip-item">真正重要的东西是什么？</button>
+          <button type="button" class="tip-item">如果前路黑暗，我该怎么办？</button>
+          <button type="button" class="tip-item">人类为什么要仰望星空？</button>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
